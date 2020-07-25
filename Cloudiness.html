@@ -4,7 +4,7 @@
    
     <meta charset="utf-8">
     <title>
-        Landing Page
+        Cloudiness vs. Latitude
     </title>
 
     <!-- Bootstrap CSS -->
@@ -44,14 +44,17 @@
             <div class="col-md-8 col-sm-12" >
               <div class="box">
                 <h1>
-                    Summary: Latitude vs. X
+                    Cloudiness
                 </h1>
-                <img src="Resources/assets/images/Fig1.png" align="left" width="200" height="200">
+                <img src="Resources/assets/images/Fig3.png" width="400" height="400">
                 <p>
-                    The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities. 
+                    From our list of 500 cities, we query the OpenWeatherMap API for the cloudiness along with the latitude. The responses are taken from JSON and appended onto list. Next we create a dataframe to hold these list and use MatPlotLib to generate a scatter plot of latitude vs. cloudiness. 
                 </p>
                 <p>
-                    After assembling the dataset, we used MatPlotLib to plot various aspects of the weather vs. latitude. Factors we looked at include: temperature, cloudiness, wind speed and humidity. This site provides the source data for the visualizations created as part of the analysis, as well as explanations and descriptions of any trends and coorelations. Thanks for reading!  
+                    Looking at the visualization, there appears to be no correlation between the latitude and cloudiness. However, one interesting thing to note is that there seem to be some specific cloudiness numbers with clusters of data at each latitude.  
+                </p>
+                <p>
+                  Take a closer look at the lines that appear to form at 90, 75, 40, 20 and 0% cloudiness. 
                 </p>
               </div>
             </div>
